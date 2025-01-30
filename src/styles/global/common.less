@@ -29,6 +29,17 @@ body {
     flex: 1 0 auto;
 }
 
+.mobile-header {
+    display: none;
+    flex: 0 0 auto;
+
+    @media @mobile{
+        display: flex;
+        max-width: 360px;
+        width: 100%;
+    }
+}
+
 h1, h2, h3, h4, h5, h6, p, ul{
     margin: 0;
 }

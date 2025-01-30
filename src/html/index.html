@@ -55,6 +55,39 @@
         @@include('blocks/main-page.html')
     </main>
 
+    <header class="mobile-header">
+        <div class="mobile-header__container">
+            <nav class="mobile-header__tabs">
+                <ul class="mobile-header__list">
+                    <li class="mobile-header__item">
+                        <a href="#" class="mobile-header__link mobile-header__link--active">
+                            <svg class="mobile-header__tab-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#tab1"></use>
+                            </svg>
+                            Расчёт
+                        </a>
+                    </li>
+                    <li class="mobile-header__item">
+                        <a href="#" class="mobile-header__link mobile-header__link">
+                            <svg class="mobile-header__tab-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#tab2"></use>
+                            </svg>
+                            История
+                        </a>
+                    </li>
+                    <li class="mobile-header__item">
+                        <a href="#" class="mobile-header__link mobile-header__link">
+                            <svg class="mobile-header__tab-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#tab3"></use>
+                            </svg>
+                            Профиль
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <script src="scripts/main.min.js"></script>
 </body>
 </html>
