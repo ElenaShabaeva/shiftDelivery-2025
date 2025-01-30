@@ -1,0 +1,33 @@
+.btn{
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 16px 58px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid @border-light;
+    border-radius: 16px;
+    background-color: transparent;
+    outline: none;
+    color: @text-secondary;
+    text-decoration: none;
+    font-family: @font1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+
+    // &:hover,
+    // &:active{
+    //     background-color: #1f1e1e;
+    //     color: #ffffff;
+    // }
+
+    &--accent{
+        background-color: @bg-brand;
+        border-color: @bg-brand;
+        color: @text-invert;
+    }
+}
