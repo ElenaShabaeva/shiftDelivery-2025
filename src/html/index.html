@@ -12,6 +12,47 @@
     <title>ШИФТ-Delivery</title>
 </head>
 <body class="body">
-    
+    <header class="page-header">
+        <div class="page-header__container container">
+            <nav class="page-header__nav">
+                <ul class="page-header__list">
+                    <li class="page-header__item">
+                        <a href="#step1" class="page-header__logo">
+                            <svg class="page-header__logo-icon" width="35" height="36">
+                                <use xlink:href="assets/icons/symbols.svg#logo"></use>
+                            </svg>
+                            Шифт Delivery
+                        </a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#step2" class="page-header__link">
+                            <svg class="page-header__quit-icon" width="25" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#user"></use>
+                            </svg>
+                            Профиль
+                        </a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">
+                            <svg class="page-header__quit-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#time"></use>
+                            </svg>
+                            История
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="page-header__quit">
+                <svg class="page-header__quit-icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#exit"></use>
+                </svg>
+                Выйти
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        @@include('blocks/main-page.html')
+    </main>
 </body>
 </html>

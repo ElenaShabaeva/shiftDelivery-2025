@@ -12,7 +12,116 @@
 </head>
 
 <body class="body">
+  <header class="page-header">
+    <div class="page-header__container container">
+      <nav class="page-header__nav">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a href="#step1" class="page-header__logo">
+              <svg class="page-header__logo-icon" width="35" height="36">
+                <use xlink:href="assets/icons/symbols.svg#logo"></use>
+              </svg>
+              Шифт Delivery
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a href="#step2" class="page-header__link">
+              <svg class="page-header__quit-icon" width="25" height="24">
+                <use xlink:href="assets/icons/symbols.svg#user"></use>
+              </svg>
+              Профиль
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a href="#" class="page-header__link">
+              <svg class="page-header__quit-icon" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#time"></use>
+              </svg>
+              История
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="page-header__quit">
+        <svg class="page-header__quit-icon" width="24" height="24">
+          <use xlink:href="assets/icons/symbols.svg#exit"></use>
+        </svg>
+        Выйти
+      </a>
+    </div>
+  </header>
 
+  <main class="main">
+    <div class="page page-active">
+      <div class="page__container container">
+        <div class="page__info">
+          <h1 class="page__title">Мы доставим ваш заказ</h1>
+          <p class="page__subtitle">Отправляйте посылки в приложении Шифт Delivery</p>
+          <div class="page__info-block">
+            <div class="page__icon">
+              <svg class="page__logo-icon" width="64" height="64">
+                <use xlink:href="assets/icons/symbols.svg#logo"></use>
+              </svg>
+            </div>
+            <img src="assets/images/qr.jpg" alt="qr" class="page__qr">
+            <p class="page__text">Наведите камеру телефона на QR‑код</p>
+          </div>
+        </div>
+        <form class="page__form form" id="js-select-form">
+          <h2 class="form__title">Рассчитать доставку</h2>
+          <div class="form__group">
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__field form__field--location field">
+                  <span class="field__title">Город отправки</span>
+                  <select class="field__select js-selectric" id="js-select-city1" name="sending-city">
+                    <option value="" disabled selected class="field__option">
+                      Выберите город отправления
+                    </option>
+                  </select>
+                </label>
+                <div class="field__links">
+                  <a href="#" class="field__link">Санкт-петербург</a>
+                  <a href="#" class="field__link">Новосибирск</a>
+                  <a href="#" class="field__link">Томск</a>
+                </div>
+              </li>
+
+              <li class="form__item">
+                <label class="form__field form__field--plane field">
+                  <span class="field__title">Город отправки</span>
+                  <select class="field__select js-selectric" id="js-select-city2" name="sending-city">
+                    <option value="" disabled selected class="field__option">
+                      Выберите город доставки
+                    </option>
+                  </select>
+                </label>
+                <div class="field__links">
+                  <a href="#" class="field__link">Новосибирск</a>
+                  <a href="#" class="field__link">Томск</a>
+                  <a href="#" class="field__link">Москва</a>
+                </div>
+              </li>
+
+              <li class="form__item">
+                <label class="form__field form__field--letter field">
+                  <span class="field__title">Город отправки</span>
+                  <select class="field__select js-selectric-package" id="js-select-package" name="sending-city">
+                    <option value="" disabled selected class="field__option">
+                      Выберите размер посылки
+                    </option>
+                  </select>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="form__btn btn btn--accent" id="js-submit-selectform-button">Рассчитать</button>
+        </form>
+      </div>
+    </div>
+
+
+  </main>
 </body>
 
 </html>
