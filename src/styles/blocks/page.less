@@ -1,0 +1,118 @@
+.page {
+    padding: 113px 0;
+
+    @media @mobile{
+        padding: 32px 0;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: 380px 1fr;
+        gap: 80px;
+
+        @media @mobile{
+            width: 328px;
+            row-gap: 24px;
+            grid-template-areas: 
+                "info"
+                "form";
+        }
+    }
+
+    &__info {
+        max-width: 380px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media @mobile{
+            grid-area: info;
+            width: 328px;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        color: @text-primary;
+        font-family: @font1;
+        font-weight: 700;
+
+        @media @mobile{
+            font-size: 28px;
+        }
+    }
+
+    &__subtitle {
+        font-family: @font1;
+        font-size: 24px;
+        font-weight: 300;
+        color: @text-tertiary;
+
+        @media @mobile{
+            font-size: 16px;
+        }
+    }
+
+    &__info-block{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        background-color: @bg-primary;
+        border-radius: 16px;
+
+        @media @mobile{
+            margin-top: 0;
+            
+        }
+    }
+
+    &__qr{
+        width: 64px;
+        height: 64px;
+
+        @media @mobile{
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    &__icon{
+        width: 64px;
+        height: 64px;
+
+        @media @mobile{
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    &__logo-icon{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text{
+        font-family: @font3;
+        font-weight: 400;
+        color: @text-tertiary;
+
+        @media @mobile{
+            font-size: 14px;
+        }
+    }
+
+    &__form{
+        background-color: @bg-primary;
+        padding: 32px 72px;
+        border-radius: 24px;
+
+        @media @mobile{
+            grid-area: form;
+            padding: 32px 16px;
+        }
+    }
+}

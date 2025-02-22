@@ -1,0 +1,75 @@
+.form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media @mobile{
+        width: 328px;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        font-family: @font1;
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        // @media @mobile{
+        //     max-width: 296px;
+        // }
+    }
+
+    &__field{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 30px;
+            left: 12px;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            top: 34px;
+            right: 12px;
+            width: 8px;
+            height: 8px;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            transform: rotate(45deg);
+        }
+
+        &--location{
+            &::before{
+                background-image: url("../../assets/images/location.svg");
+            }
+        }
+
+        &--plane{
+            &::before{
+                background-image: url("../../assets/images/plane.svg");
+            }
+        }
+
+        &--letter{
+            &::before{
+                background-image: url("../../assets/images/letter.svg");
+            }
+        }
+    }
+}

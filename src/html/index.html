@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <title>ШИФТ-Delivery</title>
+</head>
+<body class="body">
+    <header class="page-header">
+        <div class="page-header__container container">
+            <nav class="page-header__nav">
+                <ul class="page-header__list">
+                    <li class="page-header__item">
+                        <a href="#step1" class="page-header__logo">
+                            <svg class="page-header__logo-icon" width="35" height="36">
+                                <use xlink:href="assets/icons/symbols.svg#logo"></use>
+                            </svg>
+                            Шифт Delivery
+                        </a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#step2" class="page-header__link">
+                            <svg class="page-header__quit-icon" width="25" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#user"></use>
+                            </svg>
+                            Профиль
+                        </a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">
+                            <svg class="page-header__quit-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#time"></use>
+                            </svg>
+                            История
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="page-header__quit">
+                <svg class="page-header__quit-icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#exit"></use>
+                </svg>
+                Выйти
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        @@include('blocks/main-page.html')
+    </main>
+
+    <header class="mobile-header">
+        <div class="mobile-header__container">
+            <nav class="mobile-header__tabs">
+                <ul class="mobile-header__list">
+                    <li class="mobile-header__item">
+                        <a href="#" class="mobile-header__link mobile-header__link--active">
+                            <svg class="mobile-header__tab-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#tab1"></use>
+                            </svg>
+                            Расчёт
+                        </a>
+                    </li>
+                    <li class="mobile-header__item">
+                        <a href="#" class="mobile-header__link mobile-header__link">
+                            <svg class="mobile-header__tab-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#tab2"></use>
+                            </svg>
+                            История
+                        </a>
+                    </li>
+                    <li class="mobile-header__item">
+                        <a href="#" class="mobile-header__link mobile-header__link">
+                            <svg class="mobile-header__tab-icon" width="24" height="24">
+                                <use xlink:href="assets/icons/symbols.svg#tab3"></use>
+                            </svg>
+                            Профиль
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="scripts/main.min.js"></script>
+</body>
+</html>

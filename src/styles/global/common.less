@@ -1,0 +1,63 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: @bg-secondary;
+    color: @text-secondary;
+    font-family: @font1;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+    padding-top: 84px;
+    overflow-x: hidden;
+
+    @media @mobile {
+        padding-top: 0;
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.mobile-header {
+    display: none;
+    flex: 0 0 auto;
+
+    @media @mobile{
+        display: flex;
+        max-width: 360px;
+        width: 100%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+}
+
+a{
+    color: @text-secondary;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+select {
+    box-shadow: none;
+    outline: none;
+    color: @text-primary;
+    font-family: @font1;
+    border: @border-light;
+}
