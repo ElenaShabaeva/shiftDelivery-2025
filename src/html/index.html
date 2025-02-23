@@ -17,7 +17,7 @@
             <nav class="page-header__nav">
                 <ul class="page-header__list">
                     <li class="page-header__item">
-                        <a href="#step1" class="page-header__logo">
+                        <a href="#page1" class="page-header__logo" id="homeLink">
                             <svg class="page-header__logo-icon" width="35" height="36">
                                 <use xlink:href="assets/icons/symbols.svg#logo"></use>
                             </svg>
@@ -42,7 +42,7 @@
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="page-header__quit">
+            <a href="#" class="page-header__link">
                 <svg class="page-header__quit-icon" width="24" height="24">
                     <use xlink:href="assets/icons/symbols.svg#exit"></use>
                 </svg>
@@ -51,8 +51,9 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="contentContainer">
         @@include('blocks/main-page.html')
+        @@include('blocks/step1.html')
     </main>
 
     <header class="mobile-header">

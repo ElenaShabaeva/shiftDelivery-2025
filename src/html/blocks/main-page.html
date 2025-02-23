@@ -1,4 +1,4 @@
-<div class="page page-active">
+<div class="page page-hidden page-active" id="page1">
     <div class="page__container container">
         <div class="page__info">
             <h1 class="page__title">Мы доставим ваш заказ</h1>
@@ -35,7 +35,7 @@
 
                     <li class="form__item">
                         <label class="form__field form__field--plane field">
-                            <span class="field__title">Город отправки</span>
+                            <span class="field__title">Город назначения</span>
                             <select class="field__select js-selectric" id="js-select-city2" name="sending-city">
                                 <option value="" disabled selected class="field__option">
                                     Выберите город доставки
@@ -51,7 +51,7 @@
 
                     <li class="form__item">
                         <label class="form__field form__field--letter field">
-                            <span class="field__title">Город отправки</span>
+                            <span class="field__title">Размер посылки</span>
                             <select class="field__select js-selectric-package" id="js-select-package" name="sending-city">
                                 <option value="" disabled selected class="field__option">
                                     Выберите размер посылки
@@ -61,8 +61,7 @@
                     </li>
                 </ul>
             </div>
-            <button type="submit" class="form__btn btn btn--accent" id="js-submit-selectform-button">Рассчитать</button>
+            <button type="submit" class="form__btn btn btn--accent btn--disabled next-btn" id="js-page1-btn" data-page="page2">Рассчитать</button>
         </form>
     </div>
 </div>
-
