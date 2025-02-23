@@ -29,5 +29,19 @@
         background-color: @bg-brand;
         border-color: @bg-brand;
         color: @text-invert;
+        transition: background-color 0.3s;
+
+        &:hover{
+            @media(hover: hover){
+                background-color: @bg-hover-primary;
+            }
+        }
+    }
+
+    &--disabled{
+        background-color: @bg-secondary;
+        border-color: @border-light;
+        pointer-events: none;
+        color: @text-secondary;
     }
 }

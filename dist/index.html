@@ -17,7 +17,7 @@
       <nav class="page-header__nav">
         <ul class="page-header__list">
           <li class="page-header__item">
-            <a href="#step1" class="page-header__logo">
+            <a href="#page1" class="page-header__logo" id="homeLink">
               <svg class="page-header__logo-icon" width="35" height="36">
                 <use xlink:href="assets/icons/symbols.svg#logo"></use>
               </svg>
@@ -42,7 +42,7 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="page-header__quit">
+      <a href="#" class="page-header__link">
         <svg class="page-header__quit-icon" width="24" height="24">
           <use xlink:href="assets/icons/symbols.svg#exit"></use>
         </svg>
@@ -51,8 +51,8 @@
     </div>
   </header>
 
-  <main class="main">
-    <div class="page page-active">
+  <main class="main" id="contentContainer">
+    <div class="page page-hidden page-active" id="page1">
       <div class="page__container container">
         <div class="page__info">
           <h1 class="page__title">Мы доставим ваш заказ</h1>
@@ -89,7 +89,7 @@
 
               <li class="form__item">
                 <label class="form__field form__field--plane field">
-                  <span class="field__title">Город отправки</span>
+                  <span class="field__title">Город назначения</span>
                   <select class="field__select js-selectric" id="js-select-city2" name="sending-city">
                     <option value="" disabled selected class="field__option">
                       Выберите город доставки
@@ -105,7 +105,7 @@
 
               <li class="form__item">
                 <label class="form__field form__field--letter field">
-                  <span class="field__title">Город отправки</span>
+                  <span class="field__title">Размер посылки</span>
                   <select class="field__select js-selectric-package" id="js-select-package" name="sending-city">
                     <option value="" disabled selected class="field__option">
                       Выберите размер посылки
@@ -115,12 +115,19 @@
               </li>
             </ul>
           </div>
-          <button type="submit" class="form__btn btn btn--accent" id="js-submit-selectform-button">Рассчитать</button>
+          <button type="submit" class="form__btn btn btn--accent btn--disabled next-btn" id="js-page1-btn" data-page="page2">Рассчитать</button>
         </form>
       </div>
     </div>
 
-
+    <div class="page-first page-hidden " id="page2">
+      <div class="page-first__container container">
+        <div class="page-first__info">
+          <h1 class="page-first__title">Способ отправки</h1>
+          <div class="page-first__list" id="js-delivery-container"></div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <header class="mobile-header">

@@ -31,6 +31,13 @@
         font-weight: 600;
         font-family: @font2;
         color: @text-brand;
+        transition: color 0.3s;
+
+        &:hover{
+            @media(hover: hover){
+                color: @bg-hover-primary;
+            }
+        }
     }
 
     &__logo-icon{
@@ -50,13 +57,13 @@
         gap: 16px;
         font-weight: 600;
         font-family: @font1;
-    }
+        color: @text-secondary;
+        transition: color 0.3s;
 
-    &__quit{
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        font-weight: 600;
-        font-family: @font1;
+        &:hover{
+            @media(hover: hover){
+                color: @text-brand;
+            }
+        }
     }
 }

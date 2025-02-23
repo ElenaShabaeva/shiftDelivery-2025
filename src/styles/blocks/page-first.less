@@ -1,0 +1,73 @@
+.page-first{
+    padding: 113px 0;
+
+    @media @mobile{
+        padding: 32px 0;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: 468px 1fr;
+        gap: 80px;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__card{
+        display: flex;
+        gap: 16px;
+        background-color: @bg-primary;
+        padding: 16px;
+        border-radius: 24px;
+        border: 1px solid @border-light;
+    }
+
+    &__card-icon{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: @bg-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__card-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__card-subtitle, 
+    &__card-time{
+        width: 100%;
+        font-size: 12px;
+        font-family: @font1;
+        font-weight: 400;
+        color: @text-tertiary;
+    }
+
+    &__card-cost{
+        width: 100%;
+        font-size: 20px;
+        font-family: @font1;
+        font-weight: 600;
+        color: @text-primary;
+    }
+
+    &__card-time{
+        margin-top: 16px;
+    }
+}
